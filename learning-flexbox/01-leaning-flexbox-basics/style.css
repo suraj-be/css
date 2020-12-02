@@ -1,0 +1,24 @@
+*, *::before, ::after{margin: 0;box-sizing:inherit;word-break:inherit }
+ul,li{padding:0;list-style:none}
+html, body{height:100%}
+body{font-size: 16px;line-height: 1.6;background:#fff;color:#121212;box-sizing:border-box;word-break:break-word;font-family:'Montserrat', sans-serif}
+.container{max-width:800px;margin:0 auto;padding:0 13px}
+
+.parent-element{border:5px solid orange;display:inline-flex}
+.child-element{padding: 8px; background: turquoise; border: 3px solid darkturquoise;}
+
+.section-wrap{margin:20px 0 0}
+.section-two-parent{border:5px solid orange;display:flex;flex-wrap:wrap}
+.section-two-child{padding: 8px; background: turquoise; border: 3px solid darkturquoise;margin:13px}
+
+.section-three-parent{flex-wrap:nowrap;display:flex;border:5px solid orange}
+/* 
+  - display:flex is similar to display:block, whereas display:inline-flex is similar to display:inline-block
+
+  - Bydefault, flex-direction is row which makes x-axis as the main-axis and y-axis as the cross-axis. Inside main-axis, there are 2 ends, main-start and main-end, similarily cross-start and cross-end for cross-axis.
+
+  - flex-wrap:wrap, when there is not enough space, shift the content down. Default value is nowrap. There is also wrap-reverse, which is bizzare.
+
+  - flex-direction: row | row-reverse | column | column-reverse
+  - flex-items can either start from left(default) or right or top or bottom
+*/
